@@ -20,7 +20,6 @@ ul {
 
 .container {
     padding: 0 40px;
-    max-width: 1385px;
 }
 
 h3 {
@@ -35,8 +34,9 @@ p {
     margin: 0;
 }
 
-
-
+h4 {
+    font-family: GothamProRegular, sans-serif;
+}
 
 /* HEADER */
 
@@ -49,7 +49,6 @@ p {
     justify-content: space-between;
     align-items: center;
     height: 90px;   
-    width: 1340px;
 }
 
 .header-left {
@@ -133,12 +132,9 @@ p {
     height: 20px;
 }
 
-
 /* SECTION */
 
-
 .nav {
-    width: 1420px;
     color: #fff;
 }
 
@@ -152,31 +148,19 @@ p {
     padding: 20px 20px;
     margin: 0 40px;
     display: flex;
-    gap: 18px;
+    gap: 20px;
     background-color: #c50725;
     border-radius: 10px;
 }
 
-.nav-left {
-    margin: -30px;
-    width: 100px;
-    height: 100px;
-}
-
-.nav-rigth {
-    margin: -30px;
-    width: 100px;
-    height: 100px;
-}
-
 .anime-list_card {
-    width: 162px;
-    height: 258px;
+    width: 200px;
+    height: 300px;
 }
 
 .nav-img {
-    width: 153px;
-    height: 215px;
+    width: 184px;
+    height: 285px;
     border-radius: 5px;
 }
 
@@ -195,40 +179,69 @@ p {
 
 .main .container {
     padding: 0;
-    display: grid;
 }
 
 .main-title {
     text-align: center;
     font-size: 16px;
-    width: 1340px;
+    margin: 0 0 20px 0;
+    
+}
+
+.main-new-teable {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
 }
 
 .anime-item {
-    margin: 0 26px 20px 0;
+    display: flex;
     background-color: #f9f9f9;
     border-radius: 10px;
-    margin-top: 10px;
-    width: 642px;
-    height: 70px;
+    padding: 10px;
+    align-items: center;
 }
 
 .min-new-img {
     width: 60px;
     height: 70px;
     border-radius: 10px;
+    margin-right: 10px;
+}
+
+.main-new-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.main-seria-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #757B85;
 }
 
 .main-seria {
     color: #c50725;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
 }
 
 .main-new-name {
     font-size: 16px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .main-new-date {
     font-size: 13px;
+    color: #757B85;
+    margin-top: 20px;
 }
 
 .new-pag {
@@ -236,6 +249,7 @@ p {
     justify-content: center;
     height: 40px;
     align-items: center;
+    margin: 40px 0;
 }
 
 .str {
@@ -263,16 +277,202 @@ p {
     color: #112233;
 }
 
-.new-anime-sait-title {
+.main-button-str2:hover {
+    background-color: #c50725;
+    color: #fff;
+    cursor: pointer;
+}
+
+.today-play {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.today-span {
+    font-size: 14px;
+}
+
+.sort {
+
+    padding: 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    grid-gap: 10px 20px;
+    justify-content: space-between;
+    
+}
+
+.filter {
+    display: flex;
+    gap: 10px;
+    height: 60px;
+}
+
+.filter select {
+    color: #757B85;
+    font-size: 14px;
+    width: 175px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+}
+
+.ogoing {
+    font-size: 16px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.ogoing-input{  
+    height: 20px;
+    width: 40px;
+    margin: 0;
+}
+
+.ogoing-text {
+
+}
+
+.filter-img img{
+    width: 350px;
+    height: 60px;
+}
+
+.device {
+    color: #757B85;
+    background-color: #fff;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 65px 65px 65px 65px 65px;
+    gap: 5px;
+    align-content: center;
+    border: 1px solid #f2f2f2;
     text-align: center;
 }
 
+.sort-device {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.sort-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apply {
+    cursor: pointer;
+    padding: 0 10px;
+    width: 175px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #c50725;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+}
+
+.apply:hover {
+    opacity: 0.9;
+}
+
+.clear {
+    cursor: pointer;
+    font-size: 18px;
+    border: 0;
+    padding: 0 10px;
+    width: 150px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #757B85;
+}
+
+.sort-device:hover {
+    background-color: #c50725;
+    color: #fff;
+}
+
+
+.new-anime-sait {
+    
+}
+
+.new-anime-sait-title {
+    text-align: center;
+    font-size: 16px;
+}
+
+.teable {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 35px;
+}
+
+.top-left {
+    margin-left: 10px;
+    background-color: #fff;
+    color: #c50725;
+    border-radius: 5px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    padding: 2px 5px;
+}
+
+.top-right {
+    margin-left: 10px;
+    width: 30px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background-color: #fff;
+    color: #161616;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 0 2px 24px;
+}
+
+.top-right1{
+    margin-left: 10px;
+    width: 30px;
+    height: 18px;
+    position: absolute;
+    top: 27px;
+    right: 6px;
+    background-color: #fff;
+    color: #161616;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0 2px 24px;
+}
+
+
 .new-anime-sait-card {
-   
+    position: relative;
+    width: 226px;
+    height: 336px;
+}
+
+.new-anime-sait-name {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: GothamProRegular, sans-serif;
 }
 
 .new-anime-item {
-    width: 206px;
+    width: 226px;
     height: 300px;
     border-radius: 5px;
 }
@@ -304,12 +504,11 @@ p {
     transition: color 0.3s;
 }
 
-
 .next:hover {
     background-color: #424446;
     color: #fff;
+    cursor: pointer;
 }
-
 
 .last-comment {
     margin: 60px 0;
@@ -318,11 +517,6 @@ p {
 .last-comment-anime {
     text-align: center;
 }
-
-
-
-
-
 
 .animedia-online {
     display: grid;
@@ -348,9 +542,6 @@ p {
     text-decoration: underline;
 }
 
-
-
-
 /* FOOTER */
 
 .footer {
@@ -368,7 +559,7 @@ p {
 .footer-ul {
     gap: 20px;
     display: flex;
-    width: 975px;
+
 }
 
 .footer-ul li {
@@ -387,7 +578,7 @@ p {
 
 .footer-container {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .footer-AniMedia {
@@ -396,10 +587,17 @@ p {
     font-size: 13px;
     gap: 10px;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
+
+
 .AnimediaOnline {
-    width: 1200px;
-    
+    display: flex;
+}
+
+.footer-img {
+    display: flex;
+    gap: 20px;
 }
 
